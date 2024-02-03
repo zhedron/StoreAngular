@@ -1,0 +1,13 @@
+<div>
+  <button (click)="sortAsc()">Сортировка по возрастанию</button>
+  <button (click)="sortDesc()">Сортировка по убыванию</button>
+  <input type="text" [(ngModel)]="inputValue"/>
+  <button (click)="filterByName()">Применить фильтр</button>
+  <ul>
+    <li *ngFor="let storeItem of store; trackBy: trackById">
+      <p>Имя: {{storeItem.name}}</p>
+      <p>Продукт: {{storeItem.productName}}</p>
+      <p>Цена: {{storeItem.price}}</p>
+    </li>
+  </ul>
+</div>

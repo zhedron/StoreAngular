@@ -1,0 +1,12 @@
+<div>
+  <label>Изменить имя: </label>
+  <input type="text" [(ngModel)]="store.name"/>
+  <br/>
+  <label>Изменить продукт: </label>
+  <input type="text" [(ngModel)]="store.productName"/>
+  <br/>
+  <label>Изменить цену: </label>
+  <input type="number" [(ngModel)]="store.price"/>
+  <br/>
+  <button (click)="update()">Изменить</button>
+</div>

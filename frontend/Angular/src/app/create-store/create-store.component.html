@@ -1,0 +1,12 @@
+<div>
+  <label>Введите имя</label>
+  <input type="text" [(ngModel)]="store.name"/>
+  <br/>
+  <label>Ввведите ваш продукт</label>
+  <input type="text" [(ngModel)]="store.productName"/>
+  <br/>
+  <label>Введите вашу цену</label>
+  <input type="number" [(ngModel)]="store.price"/>
+  <br/>
+  <button (click)="createproduct()">Добавить</button>
+</div>
